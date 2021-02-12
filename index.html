@@ -151,9 +151,9 @@
   </script>
   <script>
     var date = new Date();
-    document.getElementById('date').innerHTML = writeIslamicDate() + formatAMPM(new Date);
+    document.getElementById('date').innerHTML = writeIslamicDate(-1) + formatAMPM(new Date);
     function refreshDate() {
-      document.getElementById('date').innerHTML = writeIslamicDate() + formatAMPM(new Date);
+      document.getElementById('date').innerHTML = writeIslamicDate(-1) + formatAMPM(new Date);
     }
     document.getElementById('refresh').addEventListener('click',  function() {
       refreshDate();
