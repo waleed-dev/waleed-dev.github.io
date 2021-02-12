@@ -130,14 +130,14 @@
 
     var monthNames = new Array("يناير", "فبراير", "مارس", "أبريل", "مايو", "يونيو", "يوليو", "أغسطس", "سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر")
     var dayNames = new Array("الأحد", "الإثنين", "الثلاثاء", "الأربعاء", "الخميس", "الجمعة", "السبت");
-
+      console.log(today.getDate())
       var wdNames = new Array("الأحد", "الإثنين", "الثلاثاء", "الأربعاء", "الخميس", "الجمعة", "السبت");
       var iMonthNames = new Array("محرم", "صفر", "ربيع الأول", "ربيع الثاني",
         "جمادى الأولى", "جمادى الثانية", "رجب", "شعبان",
         "رمضان", "شوال", "ذي القعدة", "ذي الحجة");
       var iDate = kuwaiticalendar(adjustment);
       var outputIslamicDate = wdNames[iDate[4]] + ", "
-        + dayNames[today.getDay()] + " " + monthNames[today.getMonth()] + " ";
+        + today.getDate() + " " + monthNames[today.getMonth()] + " ";
       return outputIslamicDate;
     }
 
