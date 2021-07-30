@@ -41,7 +41,7 @@
       color: white;
       font-family: 'Tajawal', sans-serif;
       font-size: 78%;
-      font-weight: lighter;
+      font-weight: 500;
     }
 
     #date {
@@ -52,21 +52,21 @@
       color: white;
       font-family: 'Tajawal', sans-serif;
       font-size: 78%;
-      font-weight: lighter;
+      font-weight: 500;
     }
 
     html, body {
       overflow-x: hidden;
     }
   </style>
-  <title>Tawakkalna</title>
+  <title>توكلنا</title>
 </head>
 
 <body>
   <img src="img2.png" style="width: 320px;" alt="">
   <button id="refresh"></button>
   <p id="immune">محصّن</p>
-  <p id="completed">استكمل جرعة لقاح كورونا (كوفيد-19)</p>
+  <p id="completed">أكمل جرعات لقاح كورونا (كوفيد-19) <span style="display:none;">مخفي</span></p>
   <p id="date"></p>
   <script>
     function gmod(n, m) {
@@ -183,9 +183,9 @@
   </script>
   <script>
     var date = new Date();
-    document.getElementById('date').innerHTML = writeIslamicDate(0) + formatAMPM(new Date);
+    document.getElementById('date').innerHTML = "آخر تحديث: " + writeIslamicDate(0) + formatAMPM(new Date);
     function refreshDate() {
-      document.getElementById('date').innerHTML = writeIslamicDate(0) + formatAMPM(new Date);
+      document.getElementById('date').innerHTML = "آخر تحديث: " + writeIslamicDate(0) + formatAMPM(new Date);
     }
     document.getElementById('refresh').addEventListener('click',  function() {
       refreshDate();
