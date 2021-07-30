@@ -7,7 +7,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">  <style>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@900&display=swap" rel="stylesheet">  
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">  
+
+  <style>
     #refresh {
       position: absolute;
       top: 570px;
@@ -19,15 +22,37 @@
       height: 40px;
     }
 
-    #date {
+    #immune {
       position: absolute;
-      top: 523px;
+      top: 490px;
+      right: 12px;
+      padding: 10px;
+      color: white;
+      font-family: 'Tajawal', sans-serif;
+      font-size: 130%;
+      font-weight: bolder;
+    }
+
+    #completed {
+      position: absolute;
+      top: 530px;
       right: 12px;
       padding: 10px;
       color: white;
       font-family: 'Tajawal', sans-serif;
       font-size: 78%;
-      font-weight: bold;
+      font-weight: lighter;
+    }
+
+    #date {
+      position: absolute;
+      top: 550px;
+      right: 12px;
+      padding: 10px;
+      color: white;
+      font-family: 'Tajawal', sans-serif;
+      font-size: 78%;
+      font-weight: lighter;
     }
 
     html, body {
@@ -38,8 +63,10 @@
 </head>
 
 <body>
-  <img src="img.png" style="width: 320px;" alt="">
+  <img src="img2.png" style="width: 320px;" alt="">
   <button id="refresh"></button>
+  <p id="immune">محصّن</p>
+  <p id="completed">استكمل جرعة لقاح كورونا (كوفيد-19)</p>
   <p id="date"></p>
   <script>
     function gmod(n, m) {
