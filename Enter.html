@@ -7,11 +7,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@900&display=swap" rel="stylesheet">  
-  <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">  
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">
 
   <style>
-    p, button, label, select {
+    p,
+    button,
+    label,
+    select {
       color: black;
       font-family: 'Tajawal', sans-serif;
       font-size: 78%;
@@ -23,46 +26,62 @@
     }
 
     #Enter {
-      background-color: #1b5d26;
+      background-color: #187575;
       color: white;
       font-size: 120%;
       border: 0;
       padding: 10px;
+      border-radius: 3px;
     }
 
     #cancel {
       font-size: 120%;
       border: 0;
       padding: 10px;
+      border-radius: 3px;
+      color: white;
+      background-color: #dcdcdc;
     }
 
-    html, body {
+    html,
+    body {
       overflow-x: hidden;
       direction: rtl;
-      
+
     }
 
-    p, label {
+    p,
+    label {
       font-size: 120%;
     }
 
     select {
       width: 100px;
+      height: 30px;
+      border-color: #ccc;
+      border-radius: 4px;
+      background: white;
     }
 
     img {
-      width: 70px;
+      width: 40px;
     }
 
     .container {
       position: absolute;
       border: 1px solid transparent;
       border-radius: 5px;
-      padding: 10px 0;
+      padding: 10px 5px;
       background-color: white;
       top: 150px;
       text-align: center;
-      right: inherit;
+      right: 10px;
+    }
+
+    html, body {
+      overflow-x: hidden;
+      margin: 0;
+
     }
   </style>
   <title>توكلنا</title>
@@ -73,42 +92,42 @@
   <img src="img2.png" alt="" style="width: 320px; filter: brightness(40%)">
   <div class="container">
 
-  <img src="check.png" />
-  <p>العدد الحالي لمن هم بداخل التجمع</p>
+    <img src="check.png" />
+    <p>العدد الحالي لمن هم بداخل التجمع</p>
 
-  <p>&#9744;&#9744; من أصل &#9744;&#9744;</p>
+    <p>&#9744;&#9744; من أصل &#9744;&#9744;</p>
 
-  <label for="cars">عدد المرافقين:</label>
+    <label for="cars">عدد المرافقين:</label>
 
-  <select name="cars" id="cars">
-    <option value="">0</option>
-    <option value="">1</option>
-    <option value="">2</option>
-    <option value="">3</option>
-    <option value="">4</option>
-    <option value="">5</option>
-    <option value="">6</option>
-    <option value="">7</option>
-    <option value="">8</option>
-    <option value="">9</option>
-  </select>
+    <select name="cars" id="cars">
+      <option value="">0</option>
+      <option value="">1</option>
+      <option value="">2</option>
+      <option value="">3</option>
+      <option value="">4</option>
+      <option value="">5</option>
+      <option value="">6</option>
+      <option value="">7</option>
+      <option value="">8</option>
+      <option value="">9</option>
+    </select>
 
-  <br><br>
+    <br><br>
 
-  <button id="Enter">تسجيل الدخول</button>
-  <button id="Cancel">إلغاء</button>
+    <button id="Enter">تسجيل الدخول</button>
+    <button id="Cancel">إلغاء</button>
 
-</div>
+  </div>
 </body>
 <script>
 
-function Enter() {
-      window.location.href = "index3.html";
-    }
+  function Enter() {
+    window.location.href = "index3.html";
+  }
 
-    document.getElementById('Enter').addEventListener('click',  function() {
-      Enter();
-    });
+  document.getElementById('Enter').addEventListener('click', function () {
+    Enter();
+  });
 </script>
 
 </html>
