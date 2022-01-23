@@ -77,12 +77,36 @@
     html, body {
       overflow-x: hidden;
     }
+
+    #success {
+      position: absolute;
+      background-color: #1b5d26;
+      color: white;
+      text-align: right;
+      top: 30px;
+      left: 9px;
+      padding: 5px 10px;
+      width: 300px;
+      border-radius: 3px;
+      height: 50px;
+      
+    }
+
+    #success > p {
+      margin-top: 10px;
+      font-family: 'Tajawal', sans-serif;
+      font-size: 88%;
+      font-weight: 500;
+      
+    }
   </style>
   <title>توكلنا</title>
 </head>
 
 <body>
+  
   <img src="img2.png" style="width: 320px;" alt="">
+  <div id="success"><p>تم تسجيل الدخول لمكان التجمع بنجاح</p></div>
   <button id="refresh"></button>
   <button id="scan"></button>
   <p id="immune">محصّن</p>

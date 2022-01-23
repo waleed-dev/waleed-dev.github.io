@@ -1,0 +1,114 @@
+<html lang="ar">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@900&display=swap" rel="stylesheet">  
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">  
+
+  <style>
+    p, button, label, select {
+      color: black;
+      font-family: 'Tajawal', sans-serif;
+      font-size: 78%;
+      font-weight: 500;
+    }
+
+    button {
+      width: 140px;
+    }
+
+    #Enter {
+      background-color: #1b5d26;
+      color: white;
+      font-size: 120%;
+      border: 0;
+      padding: 10px;
+    }
+
+    #cancel {
+      font-size: 120%;
+      border: 0;
+      padding: 10px;
+    }
+
+    html, body {
+      overflow-x: hidden;
+      direction: rtl;
+      
+    }
+
+    p, label {
+      font-size: 120%;
+    }
+
+    select {
+      width: 100px;
+    }
+
+    img {
+      width: 70px;
+    }
+
+    .container {
+      position: absolute;
+      border: 1px solid transparent;
+      border-radius: 5px;
+      padding: 10px 0;
+      background-color: white;
+      top: 150px;
+      text-align: center;
+      right: inherit;
+    }
+  </style>
+  <title>توكلنا</title>
+</head>
+
+<body>
+
+  <img src="img2.png" alt="" style="width: 320px; filter: brightness(40%)">
+  <div class="container">
+
+  <img src="check.png" />
+  <p>العدد الحالي لمن هم بداخل التجمع</p>
+
+  <p>&#9744;&#9744; من أصل &#9744;&#9744;</p>
+
+  <label for="cars">عدد المرافقين:</label>
+
+  <select name="cars" id="cars">
+    <option value="">0</option>
+    <option value="">1</option>
+    <option value="">2</option>
+    <option value="">3</option>
+    <option value="">4</option>
+    <option value="">5</option>
+    <option value="">6</option>
+    <option value="">7</option>
+    <option value="">8</option>
+    <option value="">9</option>
+  </select>
+
+  <br><br>
+
+  <button id="Enter">تسجيل الدخول</button>
+  <button id="Cancel">إلغاء</button>
+
+</div>
+</body>
+<script>
+
+function Enter() {
+      window.location.href = "index3.html";
+    }
+
+    document.getElementById('Enter').addEventListener('click',  function() {
+      Enter();
+    });
+</script>
+
+</html>
